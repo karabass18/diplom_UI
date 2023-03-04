@@ -24,19 +24,18 @@ public class SearchFieldPage {
         return this;
     }
 
-    public SearchFieldPage checkInputInSearchField() {
+    public SearchFieldPage checkInputInSearchField(String key) {
         step("Проверка перехода на страницу https://nasasearch.nasa.gov", () -> {
-            $("[name=query]").setValue("hubble").pressEnter();
+            $("[name=query]").setValue(key).pressEnter();
             assertThat(WebDriverRunner.url().contains("https://nasasearch.nasa.gov/"));
         });
         return this;
     }
 
-    public SearchFieldPage checkSearchResult() {
+    public SearchFieldPage checkSearchResult(String value) {
         step("Проверка рекомендуемой статьи в выдаче", () -> {
             $("#best-bets").shouldHave(text("Recommended by NASA"));
-            $("#best-bets").shouldHave(text("Hubble Space Telescope\n" +
-                    "https://www.nasa.gov/mission_pages/hubble/main/index.html"));
+            $("#best-bets").shouldHave(text(value));
         });
         return this;
     }

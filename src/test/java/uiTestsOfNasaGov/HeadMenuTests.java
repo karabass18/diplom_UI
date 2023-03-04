@@ -1,6 +1,8 @@
 package uiTestsOfNasaGov;
 
 import com.opencsv.CSVReader;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import pages.HeadMenuPage;
@@ -14,6 +16,7 @@ public class HeadMenuTests extends TestsBase {
 
     ClassLoader cLoader = HeadMenuTests.class.getClassLoader();
     HeadMenuPage headMenuPage = new HeadMenuPage();
+    @Severity(SeverityLevel.NORMAL)
     @DisplayName("Проверка логотипа")
     @Test
     public void logoTest() {
@@ -23,6 +26,7 @@ public class HeadMenuTests extends TestsBase {
                 .checkLogoFileName("/sites/all/themes/custom/nasatwo/images/nasa-logo.svg");
     }
 
+    @Severity(SeverityLevel.CRITICAL)
     @DisplayName("Проверка 1-й строки верхнего меню")
     @Test
     public void headMenu1RowTest() throws Exception {
@@ -34,12 +38,10 @@ public class HeadMenuTests extends TestsBase {
             headMenuPage
                     .check1RowOfHeadMenuVisible()
                     .check1RowOfHeadMenuContent(content.get(0));
-
-
         }
-
     }
 
+    @Severity(SeverityLevel.NORMAL)
     @DisplayName("Проверка 2-й строки верхнего меню")
     @Test
     public void HeadMenu2RowTest() throws Exception {

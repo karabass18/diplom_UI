@@ -1,15 +1,16 @@
 package uiTestsOfNasaGov;
 
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import pages.SocialMediaButtonPage;
 
-import static com.codeborne.selenide.Selenide.$;
-import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
-
-public class SocialMediaButtonTests extends TestsBase{
+public class SocialMediaButtonTests extends TestsBase {
 
     SocialMediaButtonPage socialMediaButtonPage = new SocialMediaButtonPage();
+
+    @Severity(SeverityLevel.NORMAL)
     @DisplayName("Проверка кнопки SOCIAL MEDIA")
     @Test
     public void socialMediaButtonTest() {
@@ -21,6 +22,7 @@ public class SocialMediaButtonTests extends TestsBase{
 
     }
 
+    @Severity(SeverityLevel.NORMAL)
     @DisplayName("Проверка сылок в выпадающем списке аккаунтов NASA")
     @Test
     public void socialMeliaDropDownContentTest() {

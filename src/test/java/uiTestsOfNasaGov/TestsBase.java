@@ -2,7 +2,10 @@ package uiTestsOfNasaGov;
 
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.logevents.SelenideLogger;
+import helpers.Attach;
 import io.qameta.allure.selenide.AllureSelenide;
+import org.checkerframework.checker.units.qual.A;
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 
@@ -18,12 +21,20 @@ public class TestsBase {
         Configuration.baseUrl = "https://www.nasa.gov";
 
     }
+
     @BeforeEach
-    public void beforeEach(){
+    public void beforeEach() {
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
         step("Открываем " + baseUrl, () -> {
             open(baseUrl);
         });
+    }
 
+    @AfterEach
+    public void addAttachment(){
+       Attach.screenshotAs("Last screenshot");
+        Attach.pageSource();
+        Attach.browserConsoleLogs();
+        Attach.addVideo();
     }
 }
