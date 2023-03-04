@@ -4,24 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b83bfae7-cd52-4497-8c86-854343526c78" name="Changes" comment="added pages">
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/FooterPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/HeadMenuPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/MoreStoriesButtonPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/SearchFieldPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/SocialMediaButtonPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/components/IsElementVisible.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/uiTestsOfNasaGov/SearchFieldTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/footerContent.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/headMenuContent.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="b83bfae7-cd52-4497-8c86-854343526c78" name="Changes" comment="added all &#10;pages">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/FooterPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/FooterPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/HeadMenuPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/HeadMenuPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/MoreStoriesButtonPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/MoreStoriesButtonPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/SearchFieldPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/SearchFieldPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/SocialMediaButtonPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/SocialMediaButtonPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/uiTestsOfNasaGov/FooterTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uiTestsOfNasaGov/FooterTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/uiTestsOfNasaGov/HeadMenuTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uiTestsOfNasaGov/HeadMenuTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/uiTestsOfNasaGov/MoreStoriesButtonTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uiTestsOfNasaGov/MoreStoriesButtonTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/uiTestsOfNasaGov/SearchFildTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/uiTestsOfNasaGov/SearchFieldTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uiTestsOfNasaGov/SearchFieldTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/uiTestsOfNasaGov/SocialMediaButtonTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uiTestsOfNasaGov/SocialMediaButtonTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/uiTestsOfNasaGov/TestsBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uiTestsOfNasaGov/TestsBase.java" afterDir="false" />
     </list>
@@ -34,6 +28,47 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="diplom_UI" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="diplom_UI" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="diplom_UI" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="verification" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="diplom_UI" type="f1a62948:ProjectNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="diplom_UI" type="f1a62948:ProjectNode" />
+                <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -61,7 +96,7 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Gradle.diplom_UI [allureServe]">
     <configuration name="HeadMenuTests.headMenuContentTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -131,59 +166,55 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="UITests.moreStoriesButtonTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="diplom_UI [allureReport]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
+        <option name="scriptParameters" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;uiTests.UITests.moreStoriesButtonTest&quot;" />
+            <option value="allureReport" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="UITests.socialMeliaDropDownContentTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="diplom_UI [allureServe]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
+        <option name="scriptParameters" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;uiTests.UITests.socialMeliaDropDownContentTest&quot;" />
+            <option value="allureServe" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.diplom_UI [allureServe]" />
+        <item itemvalue="Gradle.diplom_UI [allureReport]" />
         <item itemvalue="Gradle.SocialMediaButtonTests.socialMeliaDropDownContentTest" />
         <item itemvalue="Gradle.HeadMenuTests.headMenuContentTest" />
         <item itemvalue="Gradle.HeadMenuTests.logoTest" />
-        <item itemvalue="Gradle.UITests.socialMeliaDropDownContentTest" />
-        <item itemvalue="Gradle.UITests.moreStoriesButtonTest" />
       </list>
     </recent_temporary>
   </component>
@@ -196,6 +227,14 @@
       <option name="presentableId" value="Default" />
       <updated>1677326114064</updated>
     </task>
+    <task id="LOCAL-00001" summary="added all &#10;pages">
+      <created>1677936865168</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1677936865168</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -211,6 +250,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added pages" />
-    <option name="LAST_COMMIT_MESSAGE" value="added pages" />
+    <MESSAGE value="added all &#10;pages" />
+    <option name="LAST_COMMIT_MESSAGE" value="added all &#10;pages" />
   </component>
 </project>

@@ -1,5 +1,6 @@
 package uiTestsOfNasaGov;
 
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import pages.SocialMediaButtonPage;
 
@@ -9,7 +10,7 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 public class SocialMediaButtonTests extends TestsBase{
 
     SocialMediaButtonPage socialMediaButtonPage = new SocialMediaButtonPage();
-
+    @DisplayName("Проверка кнопки SOCIAL MEDIA")
     @Test
     public void socialMediaButtonTest() {
 
@@ -17,26 +18,16 @@ public class SocialMediaButtonTests extends TestsBase{
                 .checkSocialMediaButtonVisible()
                 .checkAppearanceOfDropDownList()
                 .checkDropDownListContent();
-        /*$("#follow").shouldBe(visible);
-        $("#at_hover").shouldBe(hidden);
-        $("#follow").click();
-        $("#at_hover").shouldBe(visible);
-        $("#at_hover").shouldHave(text("Facebook"), text("Twitter"), text("Linkedin"));*/
 
     }
 
+    @DisplayName("Проверка сылок в выпадающем списке аккаунтов NASA")
     @Test
     public void socialMeliaDropDownContentTest() {
         socialMediaButtonPage
                 .checkFaceBookLinkInTheDropDownList()
                 .checkTwitterLinkInTheDropDownList()
                 .checkLinkedinLinkInTheDropDownList();
-
-       /* $("#follow").click();
-        //sleep(500);
-        $("#at_hover").$("#atic_facebook").click();
-        assertThat(WebDriverRunner.url().contains("facebook.com"));
-        Selenide.closeWindow();*/
 
     }
 }

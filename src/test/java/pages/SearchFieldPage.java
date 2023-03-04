@@ -5,31 +5,39 @@ import com.codeborne.selenide.WebDriverRunner;
 
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.$;
+import static io.qameta.allure.Allure.step;
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
 public class SearchFieldPage {
 
     public SearchFieldPage checkSearchFieldVisible() {
-        $("[name=query]").shouldBe(Condition.visible);
+        step("Проверка видимости", () -> {
+            $("[name=query]").shouldBe(Condition.visible);
+        });
         return this;
     }
 
     public SearchFieldPage checkPlaceholderContent() {
-        assertThat($("[name=query]").getAttribute("placeholder").equals("Search"));
+        step("Проверка плейсхолдера", () -> {
+            assertThat($("[name=query]").getAttribute("placeholder").equals("Search"));
+        });
         return this;
     }
 
     public SearchFieldPage checkInputInSearchField() {
-        $("[name=query]").setValue("hubble").pressEnter();
-        //String urlOfSearch = WebDriverRunner.url();
-        assertThat(WebDriverRunner.url().contains("https://nasasearch.nasa.gov/"));
+        step("Проверка перехода на страницу https://nasasearch.nasa.gov", () -> {
+            $("[name=query]").setValue("hubble").pressEnter();
+            assertThat(WebDriverRunner.url().contains("https://nasasearch.nasa.gov/"));
+        });
         return this;
     }
 
     public SearchFieldPage checkSearchResult() {
-        $("#best-bets").shouldHave(text("Recommended by NASA"));
-        $("#best-bets").shouldHave(text("Hubble Space Telescope\n" +
-                "https://www.nasa.gov/mission_pages/hubble/main/index.html"));
+        step("Проверка рекомендуемой статьи в выдаче", () -> {
+            $("#best-bets").shouldHave(text("Recommended by NASA"));
+            $("#best-bets").shouldHave(text("Hubble Space Telescope\n" +
+                    "https://www.nasa.gov/mission_pages/hubble/main/index.html"));
+        });
         return this;
     }
 }

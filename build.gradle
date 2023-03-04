@@ -6,7 +6,7 @@ plugins {
 group 'com.karabass18'
 version '1.0-SNAPSHOT'
 
-/*allure {
+allure {
     report {
         version.set("2.19.0")
     }
@@ -18,14 +18,20 @@ version '1.0-SNAPSHOT'
             }
         }
     }
-}*/
+}
 
 repositories {
     mavenCentral()
 }
+compileJava {
+    options.encoding = 'Utf-8'
+}
+compileTestJava {
+    options.encoding = 'Utf-8'
+}
 
 dependencies {
-    testImplementation ('org.junit.jupiter:junit-jupiter:5.8.1',
+    testImplementation('org.junit.jupiter:junit-jupiter:5.8.1',
             'com.codeborne:selenide:6.10.2',
             'io.qameta.allure:allure-selenide:2.19.0',
             'org.assertj:assertj-core:3.24.2',

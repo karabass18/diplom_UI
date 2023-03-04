@@ -1,6 +1,7 @@
 package uiTestsOfNasaGov;
 
 import com.opencsv.CSVReader;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import pages.FooterPage;
 import pages.HeadMenuPage;
@@ -18,6 +19,7 @@ public class FooterTests extends TestsBase{
     ClassLoader cLoader = FooterTests.class.getClassLoader();
     FooterPage footerPage = new FooterPage();
 
+    @DisplayName("Проверка Футера")
     @Test
     public void footerContentTest() throws Exception {
 
