@@ -4,15 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b83bfae7-cd52-4497-8c86-854343526c78" name="Changes" comment="added steps">
-      <change afterPath="$PROJECT_DIR$/src/test/java/helpers/Attach.java" afterDir="false" />
+    <list default="true" id="b83bfae7-cd52-4497-8c86-854343526c78" name="Changes" comment="added logs">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/SearchFieldPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/SearchFieldPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/uiTestsOfNasaGov/FooterTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uiTestsOfNasaGov/FooterTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/uiTestsOfNasaGov/HeadMenuTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uiTestsOfNasaGov/HeadMenuTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/uiTestsOfNasaGov/MoreStoriesButtonTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uiTestsOfNasaGov/MoreStoriesButtonTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/uiTestsOfNasaGov/SearchFieldTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uiTestsOfNasaGov/SearchFieldTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/uiTestsOfNasaGov/SocialMediaButtonTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uiTestsOfNasaGov/SocialMediaButtonTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/uiTestsOfNasaGov/TestsBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uiTestsOfNasaGov/TestsBase.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -87,6 +80,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "last_opened_file_path": "C:/IdeaProjects/hw_13/src/test/java/StartsSet.java",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -238,7 +232,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677962066416</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added logs">
+      <created>1677969087002</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1677969087002</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -256,6 +257,7 @@
     <MESSAGE value="added pages" />
     <MESSAGE value="added all &#10;pages" />
     <MESSAGE value="added steps" />
-    <option name="LAST_COMMIT_MESSAGE" value="added steps" />
+    <MESSAGE value="added logs" />
+    <option name="LAST_COMMIT_MESSAGE" value="added logs" />
   </component>
 </project>
