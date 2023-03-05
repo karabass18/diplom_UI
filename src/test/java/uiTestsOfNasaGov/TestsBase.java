@@ -22,7 +22,6 @@ public class TestsBase {
         WebDriverProvider.configuration();
         Configuration.browserSize = "1920x1080";
         Configuration.baseUrl = "https://www.nasa.gov";
-        //Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("enableVNC", true);
