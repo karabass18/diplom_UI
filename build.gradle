@@ -6,6 +6,17 @@ plugins {
 group 'com.karabass18'
 version '1.0-SNAPSHOT'
 
+
+repositories {
+    mavenCentral()
+}
+compileJava {
+    options.encoding = 'Utf-8'
+}
+compileTestJava {
+    options.encoding = 'Utf-8'
+}
+
 allure {
     report {
         version.set("2.19.0")
@@ -20,15 +31,6 @@ allure {
     }
 }
 
-repositories {
-    mavenCentral()
-}
-compileJava {
-    options.encoding = 'Utf-8'
-}
-compileTestJava {
-    options.encoding = 'Utf-8'
-}
 
 dependencies {
     testImplementation('org.junit.jupiter:junit-jupiter:5.8.1',
