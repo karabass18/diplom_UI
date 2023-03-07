@@ -6,7 +6,6 @@
 - [Технологии и инструменты](#технологии-и-инструменты)
 - [Что проверяем](#Что-проверяем)
 - [Запуск тестов](#computer-запуск-тестов-из-терминала)
-- [Примеры использования](#примеры-использования)
 - [Запуск тестов в Jenkins](#-запуск-тестов-из-jenkins)
 - [Отчет о результатах тестирования в Allure Report](#-отчет-о-результатах-тестирования-в-Allure-report)
 - [Видео прохождения тестов](#movie_camera-видео-с-прогоном-тестов)
@@ -47,19 +46,26 @@
 
 ### Локальный запуск тестов
 
-```bash
+```
 gradle clean test
 ```
 
 ### Удаленный запуск тестов
 
-```bash
+```
 gradle clean test
 -DremoteUrl=${remoteUrl}
 ```
-      ,где `remoteUrl` url адрес selenoid. В сборку на Jenkins ` -DremoteUrl="https://user1:1234@selenoid.autotests.cloud/wd/hub" `
+,где `remoteUrl` url адрес selenoid. В сборкe на Jenkins  `-DremoteUrl="https://user1:1234@selenoid.autotests.cloud/wd/hub" `
       
 ## Запуск тестов в [Jenkins](https://jenkins.autotests.cloud/job/C16-karabass18-diplom)
+
+#### Главная страница Jenkins
+
+![Jenkins](media/img/Jenkins.jpg)
+
+Для запуска сборки необходимо указать значения параметров и нажать кнопку __Собрать сейчас__.
+
 
 
 https://jenkins.autotests.cloud/job/C16-karabass18-diplom/
