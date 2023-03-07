@@ -70,7 +70,7 @@ gradle clean test
 
 ![Allure1](media/img/Allure1.jpg)
 
-  Чтобы открыть отчет надо кликнуть на __Allure Report___
+  Чтобы открыть отчет надо кликнуть на [__Allure Report___ ](https://jenkins.autotests.cloud/job/C16-karabass18-diplom/allure/)
   
   Далее можно посмотреть разную информацию о работе тестов и статистике их прохождения
 
