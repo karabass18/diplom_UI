@@ -40,3 +40,5 @@ target/
 .todo
 *.properties
 /allure-report/
+/.idea/
+/.idea/
