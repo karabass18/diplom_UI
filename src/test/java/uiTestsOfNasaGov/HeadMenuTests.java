@@ -29,7 +29,7 @@ public class HeadMenuTests extends TestsBase {
     @Severity(SeverityLevel.CRITICAL)
     @DisplayName("Проверка 1-й строки верхнего меню")
     @Test
-    public void headMenu1RowTest() throws Exception {
+    public void shouldContainTextFromCsvFileInThe1Row() throws Exception {
 
         try (InputStream stream = cLoader.getResourceAsStream("headMenuContent.csv");
              CSVReader reader = new CSVReader(new InputStreamReader(stream, StandardCharsets.UTF_8))) {
@@ -44,7 +44,7 @@ public class HeadMenuTests extends TestsBase {
     @Severity(SeverityLevel.NORMAL)
     @DisplayName("Проверка 2-й строки верхнего меню")
     @Test
-    public void HeadMenu2RowTest() throws Exception {
+    public void shouldContainTextFromCsvFileInThe2Row() throws Exception {
 
         try (InputStream stream = cLoader.getResourceAsStream("headMenuContent.csv");
              CSVReader reader = new CSVReader(new InputStreamReader(stream, StandardCharsets.UTF_8))) {

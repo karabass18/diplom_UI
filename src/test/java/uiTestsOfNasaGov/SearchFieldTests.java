@@ -15,7 +15,7 @@ public class SearchFieldTests extends TestsBase {
     @Severity(SeverityLevel.CRITICAL)
     @DisplayName("Проверка поля Поиск")
     @Test
-    public void searchFieldTest() {
+    public void shouldCntainPlaceholder() {
 
         searchFieldPage
                 .checkSearchFieldVisible()
@@ -31,7 +31,7 @@ public class SearchFieldTests extends TestsBase {
     @ParameterizedTest(name = "Проверка наличия текста \"{1}\"" +
             "в рекомендуемой статье выдачи по запросу \"{0}\"")
 
-    public void searchFieldFunctionTest(String searchQuery, String expectedText) {
+    public void shouldContainAnArticleInTheSearchResult(String searchQuery, String expectedText) {
 
         searchFieldPage
                 .checkInputInSearchField(searchQuery)

@@ -13,7 +13,7 @@ public class MoreStoriesButtonTests extends TestsBase {
     @Severity(SeverityLevel.NORMAL)
     @DisplayName("Проверка кнопки MORE STORIES")
     @Test
-    public void moreStoriesButtonTest() {
+    public void shouldBeAddedCards() {
 
         moreStoriesButtonPage
                 .checkMoreStoriesButtonVisible()

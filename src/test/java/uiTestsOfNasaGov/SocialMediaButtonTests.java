@@ -13,7 +13,7 @@ public class SocialMediaButtonTests extends TestsBase {
     @Severity(SeverityLevel.NORMAL)
     @DisplayName("Проверка кнопки SOCIAL MEDIA")
     @Test
-    public void socialMediaButtonTest() {
+    public void shouldAppearDropDownList() {
 
         socialMediaButtonPage
                 .checkSocialMediaButtonVisible()
@@ -25,7 +25,7 @@ public class SocialMediaButtonTests extends TestsBase {
     @Severity(SeverityLevel.NORMAL)
     @DisplayName("Проверка сылок в выпадающем списке аккаунтов NASA")
     @Test
-    public void socialMeliaDropDownContentTest() {
+    public void shoulContainValidLinksInDropDownList() {
         socialMediaButtonPage
                 .checkFaceBookLinkInTheDropDownList()
                 .checkTwitterLinkInTheDropDownList()

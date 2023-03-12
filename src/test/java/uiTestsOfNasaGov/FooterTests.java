@@ -20,7 +20,7 @@ public class FooterTests extends TestsBase {
     @Severity(SeverityLevel.NORMAL)
     @DisplayName("Проверка Футера")
     @Test
-    public void footerContentTest() throws Exception {
+    public void shouldContainТextFromCsvFile() throws Exception {
 
         try (InputStream stream = cLoader.getResourceAsStream("footerContent.csv");
              CSVReader reader = new CSVReader(new InputStreamReader(stream, StandardCharsets.UTF_8))) {
