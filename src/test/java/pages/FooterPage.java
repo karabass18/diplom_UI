@@ -9,7 +9,7 @@ import static io.qameta.allure.Allure.step;
 
 public class FooterPage {
 
-    private final SelenideElement footerElement =  $("#footer-links").$("li");
+    private final SelenideElement footerElement =  $("#footer-links li");
     public FooterPage checkFooterVisible() {
         step("Проверяем футер на видимость ", () ->{
             $("#footer-links").shouldBe(Condition.visible);

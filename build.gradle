@@ -34,7 +34,7 @@ allure {
 
 dependencies {
     testImplementation('org.junit.jupiter:junit-jupiter:5.8.1',
-            'com.codeborne:selenide:6.10.2',
+            'com.codeborne:selenide:6.12.2',
             'io.qameta.allure:allure-selenide:2.19.0',
             'org.assertj:assertj-core:3.24.2',
             'com.opencsv:opencsv:5.7.1',

@@ -17,7 +17,7 @@ import static io.qameta.allure.Allure.step;
 public class TestsBase {
     @BeforeAll
     static void beforeAll() {
-        //Configuration.holdBrowserOpen = true;
+
         WebDriverProvider.configuration();
         Configuration.browserSize = "1920x1080";
         Configuration.baseUrl = "https://www.nasa.gov";
