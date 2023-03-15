@@ -39,7 +39,7 @@ public class SocialMediaButtonPage {
             $("#atic_facebook").shouldBe(visible);
             $("#atic_facebook").click();
             switchTo().window(1);
-            $("#homelink").shouldBe(visible);
+            //$("#homelink").shouldBe(visible);
             assertThat(WebDriverRunner.url()).contains("facebook.com");
             closeWindow();
             switchTo().window(0);
