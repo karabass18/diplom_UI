@@ -36,7 +36,6 @@ public class SocialMediaButtonPage {
         step("Прверка адреса открывающегося окна по клику на facebook ", () -> {
             $("#follow").shouldBe(visible);
             $("#follow").doubleClick();
-            //sleep(1000);
             $("#atic_facebook").shouldBe(visible);
             $("#atic_facebook").click();
             switchTo().window(1);
