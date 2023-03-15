@@ -10,8 +10,8 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
 public class HeadMenuPage {
 
-    private final SelenideElement mainMenuElement = $("#nasa-main-menu").$("li");
-    private final SelenideElement mainMenu2RowElement = $(".dropdown-menu", 0).$("li");
+    private final SelenideElement mainMenuElement = $("#nasa-main-menu li");
+    private final SelenideElement mainMenu2RowElement = $(".dropdown-menu li");
 
     public HeadMenuPage checkLogoVisible() {
         step("Проверка видимости", () -> {
@@ -23,7 +23,7 @@ public class HeadMenuPage {
     public HeadMenuPage checkLogoFileName(String value) {
         step("Проверка имени файла логотипа", () -> {
             String logoFileName = $("img").getAttribute("src");
-            assertThat(logoFileName.equals(value));
+            assertThat(logoFileName).contains(value);
         });
         return this;
     }

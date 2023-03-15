@@ -30,7 +30,7 @@ public class MoreStoriesButtonPage {
             int numberBeforeClick = $("#cards").$$(withTagAndText("a", "")).size();
             $("#trending").click();
             int numberAfterClick = $("#cards").$$(withTagAndText("a", "")).size();
-            assertThat(numberAfterClick > numberBeforeClick);
+            assertThat(numberAfterClick).isStrictlyBetween(numberBeforeClick, numberBeforeClick + 25);
         });
         return this;
     }

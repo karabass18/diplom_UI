@@ -19,7 +19,7 @@ public class SearchFieldPage {
 
     public SearchFieldPage checkPlaceholderContent() {
         step("Проверка плейсхолдера", () -> {
-            assertThat($("[name=query]").getAttribute("placeholder").equals("Search"));
+            assertThat($("[name=query]").getAttribute("placeholder")).isEqualTo("Search");
         });
         return this;
     }
@@ -27,7 +27,7 @@ public class SearchFieldPage {
     public SearchFieldPage checkInputInSearchField(String key) {
         step("Проверка перехода на страницу https://nasasearch.nasa.gov", () -> {
             $("[name=query]").setValue(key).pressEnter();
-            assertThat(WebDriverRunner.url().contains("https://nasasearch.nasa.gov/"));
+            assertThat(WebDriverRunner.url()).contains("https://nasasearch.nasa.gov/");
         });
         return this;
     }
