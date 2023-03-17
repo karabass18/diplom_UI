@@ -2,8 +2,10 @@ package uiTestsOfNasaGov;
 
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.logevents.SelenideLogger;
+import config.ContentConfig;
 import helpers.Attach;
 import io.qameta.allure.selenide.AllureSelenide;
+import org.aeonbits.owner.ConfigFactory;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
@@ -15,12 +17,15 @@ import static com.codeborne.selenide.Selenide.open;
 import static io.qameta.allure.Allure.step;
 
 public class TestsBase {
+
+    ContentConfig contentConfig = ConfigFactory.create(ContentConfig.class, System.getProperties());
     @BeforeAll
     static void beforeAll() {
 
         WebDriverProvider.configuration();
         Configuration.browserSize = "1920x1080";
         Configuration.baseUrl = "https://www.nasa.gov";
+
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("enableVNC", true);
