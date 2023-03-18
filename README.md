@@ -10,6 +10,7 @@
 - [Отчет о результатах тестирования в Allure Report](#отчет-о-выполнении-тестов)
 - [Пример видео из логов](#пример-видео-из-логов)
 - [Отправка отчета в telegram](#отправка-отчета-в-telegram)
+- [Интеграция с Allure TestOps и Jira](#интеграция-с-allure-testops-и-jira)
 
 ## Технологии и инструменты
 
@@ -93,6 +94,20 @@ gradle clean test
 
 
 ![telegram](media/img/telegram.jpg)
+
+
+#### Интеграция с Allure TestOps и Jira
+
+Сборка в **Jenkins** инткгрирована с отчетом в **Allure TestOps**.
+Он позволяет следить за ходом выполнения тестов в реальном времени.
+
+![testops3](media/img/testops3.jpg)
+![testops1](media/img/testops1.jpg)
+![testops2](media/img/testops2.jpg)
+
+Также позволяет осуществить интеграцию с **Jira**
+
+![jira](media/img/jira.jpg)
 
 
 
