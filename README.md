@@ -9,6 +9,8 @@
 - [Запуск тестов в Jenkins](#запуск-тестов-в-jenkins)
 - [Отчет о результатах тестирования в Allure Report](#отчет-о-выполнении-тестов)
 - [Пример видео из логов](#пример-видео-из-логов)
+- [Отправка отчета в telegram](#отправка-отчета-в-telegram)
+- [Интеграция с Allure TestOps и Jira](#интеграция-с-allure-testops-и-jira)
 
 ## Технологии и инструменты
 
@@ -22,6 +24,8 @@
 <a href="https://aerokube.com/selenoid/"><img src="media/logo/Selenoid.svg" width="50" height="50" alt="Selenoid" title="Selenoid"/></a>
 <a href="https://github.com/allure-framework/allure2"><img src="media/logo/Allure_Report.svg" width="50" height="50" alt="Allure" title="Allure"/></a>
 <a href="https://www.jenkins.io/"><img src="media/logo/Jenkins.svg" width="50" height="50" alt="Jenkins" title="Jenkins"/></a>
+ <a href="https://web.telegram.org/"><img src="media\logo\Telegram.svg" width="50" height="50" alt="Telegram" title="Telegram"></a>
+<a href="https://qameta.io/"><img src="media\logo\Allure_TO.svg" width="50" height="50" alt="Allure_TO" title="Allure_TO"></a>
 </p>
 
 В проекте автотесты написаны на **Java** с использованием фреймворка для тестирования **Selenide**. Для сборки проекта в среде **IntelliJ IDEA** используется **Gradle**.
@@ -85,6 +89,27 @@ gradle clean test
 
 
 ![Allure-видео](media/img/allure-video.gif)
+
+#### Отправка отчета в telegram
+
+После выполнения сборки в **Jenkins** автоматически отправляется отчет в **telegram**
+
+
+![telegram](media/img/telegram.jpg)
+
+
+#### Интеграция с Allure TestOps и Jira
+
+Сборка в **Jenkins** инткгрирована с отчетом в **Allure TestOps**.
+Он позволяет следить за ходом выполнения тестов в реальном времени.
+
+![testops3](media/img/testops3.jpg)
+![testops1](media/img/testops1.jpg)
+![testops2](media/img/testops2.jpg)
+
+Также позволяет осуществить интеграцию с **Jira**
+
+![jira](media/img/jira.jpg)
 
 
 
